@@ -1,5 +1,7 @@
 package com.daojdbc.dao;
 
+import java.util.List;
+
 import com.daojdbc.models.Department;
 
 public interface DepartmentDao {
@@ -14,5 +16,5 @@ public interface DepartmentDao {
 
     public Department findByName(String name);
 
-    public Department[] findAll();
+    public List<Department> findAll();
 }
