@@ -1,5 +1,7 @@
 package com.daojdbc.dao;
 
+import java.util.List;
+
 import com.daojdbc.models.Department;
 import com.daojdbc.models.Seller;
 
@@ -15,5 +17,7 @@ public interface SellerDao {
 
     public Seller findByName(String name);
 
-    public Department[] findAll();
+    public List<Seller> findByDepartment(Department department);
+
+    public List<Seller> findAll();
 }
